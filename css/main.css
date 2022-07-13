@@ -21,7 +21,7 @@
  *  13. projects
  *  14. call-to-action section
  *  15. services
- *  16. stats
+ *  16. relevant-links
  *  17. contact
  *  18. footer
  *
@@ -890,11 +890,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 /** 
- * Stats Tab
+ * relevant-links Tab
  * ---------
  * markup:
  *
- * <ul class="stats-tabs">
+ * <ul class="relevant-links-tabs">
  *		<li><a href="#">[value]<em>[name]</em></a></li>
  *	</ul>
  *
@@ -902,32 +902,32 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *
  * ---------------------------------------------------------------------
  */
-.stats-tabs {
+.relevant-links-tabs {
 	padding: 0;
 	margin: 3rem 0;
 }
-.stats-tabs li {
+.relevant-links-tabs li {
 	display: inline-block;
 	margin: 0 1.5rem 3rem 0;
 	padding: 0 1.5rem 0 0;
 	border-right: 1px solid #ccc;
 }
-.stats-tabs li:last-child {
+.relevant-links-tabs li:last-child {
 	margin: 0;
 	padding: 0;
 	border: none;
 }
-.stats-tabs li a {
+.relevant-links-tabs li a {
 	display: inline-block;
 	font-size: 2.5rem;
 	font-family: "poppins-bold", sans-serif;
 	border: none;
 	color: #252525;
 }
-.stats-tabs li a:hover {
+.relevant-links-tabs li a:hover {
 	color: #f51505;
 }
-.stats-tabs li a em {
+.relevant-links-tabs li a em {
 	display: block;
 	margin: .6rem 0 0 0;
 	font-size: 1.4rem;
@@ -1042,6 +1042,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .section-intro h5 {
 	color: #f51505;
+	font-size: 1.6rem;
+	line-height: 1.875;
+	margin-bottom: 0.3rem;
+	letter-spacing: .4rem;
+}
+.section-intro h6 {
+	color: #FFFFFF;
 	font-size: 1.6rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
@@ -2176,31 +2183,31 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 16. stats - (_layout.scss)
+ * 16. relevant-links - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
-#stats {
+#relevant-links {
 	background: #990000;
 	padding-top: 7.2rem;
 	padding-bottom: 6rem;
 	text-align: center;
 }
-#stats .row {
+#relevant-links .row {
 	max-width: 1440px;
 }
-#stats .stat {
+#relevant-links .stat {
 	border-left: 1px solid rgba(255, 255, 255, 0.12);
 	min-height: 17.4rem;
 }
-#stats .stat:first-child {
+#relevant-links .stat:first-child {
 	border: none;
 }
-#stats .icon-part i {
+#relevant-links .icon-part i {
 	font-size: 4.8rem;
 	color: #000000;
 }
-#stats .stat-count {
+#relevant-links .stat-count {
 	color: #FFFFFF;
 	font-size: 3.6rem;
 	margin-top: 1.2rem;
@@ -2208,34 +2215,34 @@ header .logo a {
 	font-family: "poppins-medium", sans-serif;
 	color: white;
 }
-#stats .stat-title {
+#relevant-links .stat-title {
 	color: rgba(255, 255, 255, 0.5);
 }
 
 /**
  * responsive:
- * stats
+ * relevant-links
  * -------------------------------------------------------------------
  */
 @media only screen and (max-width:1024px) {
-	#stats .stat:nth-child(n) {
+	#relevant-links .stat:nth-child(n) {
 		border-left: 1px solid rgba(255, 255, 255, 0.12);
 		padding-bottom: 1.5rem;
 	}
-	#stats .stat:nth-child(3n+1) {
+	#relevant-links .stat:nth-child(3n+1) {
 		border: none;
 	}
 }
 @media only screen and (max-width:768px) {
-	#stats .stat:nth-child(n) {
+	#relevant-links .stat:nth-child(n) {
 		border-left: 1px solid rgba(255, 255, 255, 0.12);
 	}
-	#stats .stat:nth-child(2n+1) {
+	#relevant-links .stat:nth-child(2n+1) {
 		border: none;
 	}
 }
 @media only screen and (max-width:600px) {
-	#stats .stat:nth-child(n) {
+	#relevant-links .stat:nth-child(n) {
 		border: none;
 	}
 }
